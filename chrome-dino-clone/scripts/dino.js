@@ -1,7 +1,7 @@
 function Dino() {
   this.y = height / 1.5;
   this.x = 100;
-
+  
   this.gravity = 0.6;
   this.lift = -15;
   this.velocity = 0;

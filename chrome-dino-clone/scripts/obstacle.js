@@ -1,8 +1,7 @@
-let yPos = 200;
 function Obstacle() {
   this.x = width;
   this.w = 20;
-  this.h = 100;//random(50, 100);
+  this.h = 100;
   this.heighLight = false;
   this.img1 = loadImage("assets/cactus1.png");
   this.img2 = loadImage("assets/cactus2.png");
