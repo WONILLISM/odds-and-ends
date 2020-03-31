@@ -60,5 +60,5 @@ function keyPressed() {
 function gameOver() {
   finished = true;
   textAlign(CENTER);
-  text("Game Over!!!\nPress Space to restart", width / 2, height / 2);
+  text("Game Over!!!\nPress Space & Touch to restart", width / 2, height / 2);
 }
