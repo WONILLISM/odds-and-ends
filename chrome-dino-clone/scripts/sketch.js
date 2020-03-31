@@ -51,11 +51,13 @@ function draw() {
   dino.update();
   dino.show();
 }
-
+function touchMoved(){
+  return false;
+}
 function touchStarted(){
   let d = dist(mouseX,mouseY,fsBtnPos_x,fsBtnPos_y);
-  let d_mobile = dist(touchX,touchY,fsBtnPos_x,fsBtnPos_y);
-  if(d_mobile<fsBtnSize||d<fsBtnSize){
+  //let d_mobile = dist(ptouchX,ptouchY,fsBtnPos_x,fsBtnPos_y);
+  if(d<fsBtnSize){
     let fs = fullscreen();
     if(!fs){
       fullscreen(true);
@@ -106,7 +108,7 @@ function gameOver() {
   text("Game Over!!!\nPress Space & Touch to restart", width / 2, height / 2);
 }
 function windowResized(){
-  resizeCanvs(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
 }
 document.ontouchmove = event =>{
   event.preventDefault();
