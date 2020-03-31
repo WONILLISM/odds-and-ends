@@ -36,6 +36,11 @@ function draw() {
   dino.show();
 }
 
+function touchStarted(){
+  if(value){
+    dino.jump();
+  }
+}
 function keyPressed() {
   if (key == ' ') {
     if (finished) {
