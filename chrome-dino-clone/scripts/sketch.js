@@ -4,7 +4,7 @@ let finished;
 let score = 0;
 let speed = 5;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
   dino = new Dino();
   finished = false;
   fill(0);
