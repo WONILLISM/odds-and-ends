@@ -104,3 +104,9 @@ function gameOver() {
   textAlign(CENTER);
   text("Game Over!!!\nPress Space & Touch to restart", width / 2, height / 2);
 }
+function windowResized(){
+  resizeCanvs(windowWidth, windowHeight);
+}
+document.ontouchmove = event =>{
+  event.preventDefault();
+}
