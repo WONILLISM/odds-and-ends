@@ -54,7 +54,8 @@ function draw() {
 
 function touchStarted(){
   let d = dist(mouseX,mouseY,fsBtnPos_x,fsBtnPos_y);
-  if(d<fsBtnSize){
+  let d_mobile = dist(touchX,touchY,fsBtnPos_x,fsBtnPos_y);
+  if(d_mobile<fsBtnSize||d<fsBtnSize){
     let fs = fullscreen();
     if(!fs){
       fullscreen(true);
