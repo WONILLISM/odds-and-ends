@@ -5,10 +5,10 @@ let score = 0;
 let speed = 5;
 function setup() {
   if(windowHeight<windowWidth){
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(1000, 400);
   }
   else{
-    createCanvas(windowHeight, windowWidth);
+    createCanvas(400, 1000);
   }
   
   dino = new Dino();
