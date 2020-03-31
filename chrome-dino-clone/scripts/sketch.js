@@ -4,7 +4,7 @@ let finished;
 let score = 0;
 let speed = 5;
 function setup() {
-  createCanvas(displayHeight, displayWidth);
+  createCanvas(displayWidth, displayHeight);
   dino = new Dino();
   finished = false;
   fill(0);
@@ -37,6 +37,12 @@ function draw() {
 }
 
 function touchStarted(){
+  if (finished) {
+    finished = false;
+    obstacles.splice(0, obstacles.length);
+    score = 0;
+    loop();
+  }
   dino.jump();
 }
 function keyPressed() {
